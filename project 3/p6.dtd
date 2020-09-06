@@ -1,0 +1,34 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT biblio (book)+>
+<!ATTLIST biblio
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT book (title,category,rating,price,author)>
+<!ATTLIST book
+  xmlns CDATA #FIXED ''
+  year CDATA #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT category (#PCDATA)>
+<!ATTLIST category
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rating (#PCDATA)>
+<!ATTLIST rating
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT author (name)+>
+<!ATTLIST author
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
